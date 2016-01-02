@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <ul class="list-group">
+        {% for book in books %}
+            <li class="list-group-item">{{ book.title }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
